@@ -25,7 +25,7 @@ async function outputFileAsync(file, data) {
 generator
   .generateCritical(url, dimensions, location)
   .then((css) => {
-    //console.log(css);
+    console.log(css);
     if (css.length > 10)
       outputFileAsync(location, css).then(() =>
         console.log(`Done. critical.css saved in ${location}/critical.css `)
