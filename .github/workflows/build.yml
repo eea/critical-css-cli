@@ -1,5 +1,9 @@
-- name: Build and run
-  uses: docker/build-push-action@v2.2.2
-  on: push
-  runs-on: ubuntu-latest
-  run: URL=https://www.google.com/ docker-compose up
+name: Docker Compose Actions Workflow
+on: push
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build and run
+        run: URL=https://www.google.com/  docker-compose up
