@@ -1,5 +1,7 @@
 # @plonecollective/critical-css-cli
 
+> DEPRECATED: Please use [@plone/critical-css-cli](https://github.com/plone/critical-css-cli)
+
 A command-line utility to generate critical CSS from a set of URLs. The
 functionality is useful for a CMS-powered website, where pages are user-defined
 and and their CSS comes from multiple addons. Because the website layout is
